@@ -1,0 +1,12 @@
+def insertion_sort(lst):
+    
+    for i in range(0,len(lst)-1):
+        left = i 
+        right = i + 1
+
+        while left >= 0 and lst[right] < lst[left]:
+                lst[right] , lst[left]  = lst[left] , lst[right]
+                right -= 1
+                left -= 1
+        
+    return lst            
